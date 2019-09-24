@@ -2,5 +2,13 @@
 name = "rusty"
 version = "0.1.0"
 authors = ["Alexander Tchitchigin <sad.ronin@gmail.com>"]
+edition = "2018"
 
 [dependencies]
+typed-arena = "1.6"
+lazy_static = "1.4"
+smallvec = "0.6"
+rayon = "1.2"
+
+[profile.release]
+debug = true
